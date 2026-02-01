@@ -320,3 +320,4 @@ Questions or feedback? Check the documentation or open an issue.
 ---
 
 **Built with ❤️ for whiskey enthusiasts and sensory training**
+

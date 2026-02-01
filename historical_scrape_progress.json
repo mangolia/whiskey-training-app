@@ -1,0 +1,10 @@
+{
+  "started_at": null,
+  "last_updated": "2026-01-14T10:35:22.816704",
+  "total_urls_discovered": 0,
+  "urls_to_scrape": 0,
+  "completed_urls": 0,
+  "successful_scrapes": 0,
+  "failed_urls": [],
+  "status": "completed"
+}

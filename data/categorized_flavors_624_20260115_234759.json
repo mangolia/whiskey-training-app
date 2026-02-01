@@ -1,0 +1,6866 @@
+[
+  {
+    "flavor": "Rye Spice",
+    "frequency": 881,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Leather",
+    "frequency": 741,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Oak",
+    "frequency": 693,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel",
+    "frequency": 626,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla",
+    "frequency": 576,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Brown Sugar",
+    "frequency": 548,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baking Spices",
+    "frequency": 448,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon",
+    "frequency": 349,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Charred Oak",
+    "frequency": 289,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honey",
+    "frequency": 282,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Oak",
+    "frequency": 259,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Oak",
+    "frequency": 231,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Aged Oak",
+    "frequency": 214,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raisin",
+    "frequency": 179,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Peppercorn",
+    "frequency": 178,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Seasoned Oak",
+    "frequency": 154,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Graham Cracker",
+    "frequency": 153,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nutmeg",
+    "frequency": 151,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Barrel Char",
+    "frequency": 144,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Spice",
+    "frequency": 141,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Molasses",
+    "frequency": 136,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry",
+    "frequency": 133,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toffee",
+    "frequency": 133,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apricot",
+    "frequency": 132,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Butterscotch",
+    "frequency": 123,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tobacco",
+    "frequency": 123,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Stick",
+    "frequency": 121,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Plum",
+    "frequency": 117,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Allspice",
+    "frequency": 116,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Pepper",
+    "frequency": 111,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Clove",
+    "frequency": 105,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grain",
+    "frequency": 104,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baking Spice",
+    "frequency": 101,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Malt",
+    "frequency": 101,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Long",
+    "frequency": 97,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tobacco Leaf",
+    "frequency": 95,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raspberry",
+    "frequency": 93,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Caramel",
+    "frequency": 87,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rye Grain",
+    "frequency": 87,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Short",
+    "frequency": 86,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Custard",
+    "frequency": 80,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Peppercorn Spice",
+    "frequency": 79,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Medium Length",
+    "frequency": 78,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Cherry",
+    "frequency": 77,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baking Chocolate",
+    "frequency": 75,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Chocolate",
+    "frequency": 73,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Spice",
+    "frequency": 72,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Syrup",
+    "frequency": 72,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Earthy",
+    "frequency": 71,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spice",
+    "frequency": 69,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Oak",
+    "frequency": 67,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cigar Box",
+    "frequency": 66,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peach",
+    "frequency": 66,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Fruits",
+    "frequency": 65,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Citrus",
+    "frequency": 62,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Summer Fruits",
+    "frequency": 62,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Maple Syrup",
+    "frequency": 60,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pear",
+    "frequency": 60,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pie Crust",
+    "frequency": 60,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Smoke",
+    "frequency": 60,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Bean",
+    "frequency": 60,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Chews",
+    "frequency": 59,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Pepper",
+    "frequency": 58,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ethanol",
+    "frequency": 57,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Leather",
+    "frequency": 55,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Maple Sugar Candy",
+    "frequency": 55,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Heat",
+    "frequency": 54,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppercorn Spice",
+    "frequency": 54,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stone Fruit",
+    "frequency": 54,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Walnut",
+    "frequency": 54,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Anise",
+    "frequency": 51,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nougat",
+    "frequency": 51,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chocolate",
+    "frequency": 50,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Cream",
+    "frequency": 50,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Brown Sugar",
+    "frequency": 49,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pine",
+    "frequency": 49,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet",
+    "frequency": 48,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cocoa Powder",
+    "frequency": 46,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Malt",
+    "frequency": 46,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Vanilla",
+    "frequency": 46,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Marshmallow",
+    "frequency": 46,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apple",
+    "frequency": 45,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Powder",
+    "frequency": 45,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Prune",
+    "frequency": 45,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Grape",
+    "frequency": 45,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Corn",
+    "frequency": 44,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creme Brulee",
+    "frequency": 44,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry",
+    "frequency": 44,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Rind",
+    "frequency": 44,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Corn",
+    "frequency": 44,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candy Corn",
+    "frequency": 43,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Apple",
+    "frequency": 43,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Cherry",
+    "frequency": 42,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Milk Chocolate",
+    "frequency": 42,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mint",
+    "frequency": 42,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raisins",
+    "frequency": 42,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bold Rye Spice",
+    "frequency": 41,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Fruit",
+    "frequency": 41,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Oak",
+    "frequency": 41,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Powder",
+    "frequency": 41,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Aged Leather",
+    "frequency": 40,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Peppercorn",
+    "frequency": 40,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Malted Barley",
+    "frequency": 40,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mixed Nuts",
+    "frequency": 40,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fig",
+    "frequency": 39,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rich",
+    "frequency": 39,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Extract",
+    "frequency": 39,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chewy Oak",
+    "frequency": 38,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cola",
+    "frequency": 38,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Zest",
+    "frequency": 38,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pepper",
+    "frequency": 38,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tannic Oak",
+    "frequency": 38,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hay",
+    "frequency": 37,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lemon",
+    "frequency": 37,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Maple",
+    "frequency": 36,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "New Oak",
+    "frequency": 36,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Peel",
+    "frequency": 36,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Marshmallow",
+    "frequency": 35,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hazelnut",
+    "frequency": 34,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Peppercorn",
+    "frequency": 33,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cedar",
+    "frequency": 33,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Baked Bread",
+    "frequency": 33,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange",
+    "frequency": 33,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peat",
+    "frequency": 33,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Summer Fruit",
+    "frequency": 33,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Raspberry",
+    "frequency": 31,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Sugar",
+    "frequency": 31,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Apricot",
+    "frequency": 31,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Floral",
+    "frequency": 31,
+    "category": "floral",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Slightly Dry",
+    "frequency": 31,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Strawberry",
+    "frequency": 31,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Blackberry",
+    "frequency": 30,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Brown Butter",
+    "frequency": 30,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bubble Gum",
+    "frequency": 30,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cr\u00e8me Br\u00fbl\u00e9e",
+    "frequency": 30,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sandalwood",
+    "frequency": 30,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Thin Mouthfeel",
+    "frequency": 30,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cranberry",
+    "frequency": 29,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Golden Raisin",
+    "frequency": 29,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grape",
+    "frequency": 29,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honeycomb",
+    "frequency": 29,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Light",
+    "frequency": 29,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering",
+    "frequency": 29,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rye Bread",
+    "frequency": 29,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Leather",
+    "frequency": 29,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Bark",
+    "frequency": 28,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Tea",
+    "frequency": 28,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Syrup",
+    "frequency": 27,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cocoa",
+    "frequency": 27,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppercorn",
+    "frequency": 27,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle Rye Spice",
+    "frequency": 26,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Honey",
+    "frequency": 26,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Apples",
+    "frequency": 26,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Frosting",
+    "frequency": 26,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Almond",
+    "frequency": 25,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Marmalade",
+    "frequency": 25,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppery Oak",
+    "frequency": 25,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baked Bread",
+    "frequency": 24,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chocolate Malt",
+    "frequency": 24,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Fruit",
+    "frequency": 24,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Peppercorn Spice",
+    "frequency": 24,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lightly Charred Oak",
+    "frequency": 24,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mild Oak",
+    "frequency": 24,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spearmint",
+    "frequency": 24,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Oak",
+    "frequency": 24,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Currant",
+    "frequency": 23,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "French Oak",
+    "frequency": 23,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Herbal",
+    "frequency": 23,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Agave",
+    "frequency": 22,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cereal Grain",
+    "frequency": 22,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fruit Cake",
+    "frequency": 22,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Overall",
+    "frequency": 22,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pecan",
+    "frequency": 22,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rich Oak",
+    "frequency": 22,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Caramel",
+    "frequency": 22,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Syrup",
+    "frequency": 22,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Yellow Cake",
+    "frequency": 22,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Amaretto",
+    "frequency": 21,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Corn Syrup",
+    "frequency": 21,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Thick Oak",
+    "frequency": 21,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Brown Sugar",
+    "frequency": 20,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cream Soda",
+    "frequency": 20,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Grain",
+    "frequency": 20,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rich Caramel",
+    "frequency": 20,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Seared Mint",
+    "frequency": 20,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apple Pie",
+    "frequency": 19,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Peppercorn Spice",
+    "frequency": 19,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Berries",
+    "frequency": 19,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Marzipan",
+    "frequency": 19,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mixed Berries",
+    "frequency": 19,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Corn",
+    "frequency": 18,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Charred Oak",
+    "frequency": 18,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gingerbread",
+    "frequency": 18,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grass",
+    "frequency": 18,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Heat",
+    "frequency": 18,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Rye Spice",
+    "frequency": 18,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppercorn Mix",
+    "frequency": 18,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Well Balanced",
+    "frequency": 18,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Oak",
+    "frequency": 17,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creamy Mouthfeel",
+    "frequency": 17,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creamy Vanilla",
+    "frequency": 17,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Earthy Undertone",
+    "frequency": 17,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Musty Oak",
+    "frequency": 17,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stone Fruits",
+    "frequency": 17,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Wafer",
+    "frequency": 17,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramelized Sugar",
+    "frequency": 16,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cornbread",
+    "frequency": 16,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creamy Caramel",
+    "frequency": 16,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Nuts",
+    "frequency": 16,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Dry",
+    "frequency": 16,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Brown Sugar",
+    "frequency": 16,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Youthful",
+    "frequency": 16,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Orange Rind",
+    "frequency": 15,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chocolate Malt Balls",
+    "frequency": 15,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dill",
+    "frequency": 15,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Sweetness",
+    "frequency": 15,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Malty",
+    "frequency": 15,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mixed Peppercorn Spice",
+    "frequency": 15,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Chocolate",
+    "frequency": 15,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pretzel Dough",
+    "frequency": 15,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Silky Mouthfeel",
+    "frequency": 15,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spicy Cinnamon",
+    "frequency": 15,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Syrup Soaked Raisins",
+    "frequency": 15,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Thick Mouthfeel",
+    "frequency": 15,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toast",
+    "frequency": 15,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Youthful Grain",
+    "frequency": 15,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Berries",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Buttery Mouthfeel",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Campfire Smoke",
+    "frequency": 14,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Cream Candy",
+    "frequency": 14,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Sauce",
+    "frequency": 14,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Bread",
+    "frequency": 14,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Frosted Flakes Cereal",
+    "frequency": 14,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle Oak",
+    "frequency": 14,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grain-Forward",
+    "frequency": 14,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mellow Oak",
+    "frequency": 14,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nutty",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Oak Tannins",
+    "frequency": 14,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raspberry Jam",
+    "frequency": 14,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Hots Candy",
+    "frequency": 14,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Some Heat",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Straightforward",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Straw",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Strawberry Cream",
+    "frequency": 14,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Velvety Mouthfeel",
+    "frequency": 14,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Wet Oak",
+    "frequency": 14,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Buttercream Frosting",
+    "frequency": 13,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Apple",
+    "frequency": 13,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Coffee Bean",
+    "frequency": 13,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Caramel",
+    "frequency": 13,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Raisins",
+    "frequency": 13,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Mint",
+    "frequency": 13,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Full-Flavored",
+    "frequency": 13,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Herbal Undertone",
+    "frequency": 13,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Kettle Corn",
+    "frequency": 13,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mexican Chocolate",
+    "frequency": 13,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nice Mouthfeel",
+    "frequency": 13,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nicely Balanced",
+    "frequency": 13,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Fruits",
+    "frequency": 13,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rush Of Spice",
+    "frequency": 13,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Caramel",
+    "frequency": 13,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Rye Spice",
+    "frequency": 13,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Smoke",
+    "frequency": 13,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Banana",
+    "frequency": 12,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Butter",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Cherries",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Apple",
+    "frequency": 12,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Floral Undertone",
+    "frequency": 12,
+    "category": "floral",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grassy",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Inviting",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nutty Undertone",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pecan Pie",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppery Spice",
+    "frequency": 12,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Potent",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Raspberry",
+    "frequency": 12,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Savory",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Fruit",
+    "frequency": 12,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tree Bark",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Warming Heat",
+    "frequency": 12,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Aged Dry Oak",
+    "frequency": 11,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bold",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Buttered Cornbread",
+    "frequency": 11,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cantaloupe",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chestnut",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Sugar",
+    "frequency": 11,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Coconut",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Coffee Cake",
+    "frequency": 11,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cotton Candy",
+    "frequency": 11,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Custard",
+    "frequency": 11,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Delicious",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honeydew",
+    "frequency": 11,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Intriguing",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Dry Spice",
+    "frequency": 11,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mint Leaf",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pleasing",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raw Sugar",
+    "frequency": 11,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spicy Oak",
+    "frequency": 11,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Summer Berries",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Cinnamon",
+    "frequency": 11,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Ethanol",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tropical Fruit",
+    "frequency": 11,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Unique",
+    "frequency": 11,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baked Pie Crust",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Currants",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Browned Butter",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candied Orange",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry Cola",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dab Of Honey",
+    "frequency": 10,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dab Of Rye Spice",
+    "frequency": 10,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dates",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Fruits",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fennel",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "French Toast",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ginger",
+    "frequency": 10,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gingerbread Cookie",
+    "frequency": 10,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Grape",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hot",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lemon Zest",
+    "frequency": 10,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Malted Grain",
+    "frequency": 10,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mellow",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Melted Caramel",
+    "frequency": 10,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Apple",
+    "frequency": 10,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Cream",
+    "frequency": 10,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tiramisu",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Coconut",
+    "frequency": 10,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Sugar",
+    "frequency": 10,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Cinnamon",
+    "frequency": 10,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Vanilla",
+    "frequency": 10,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Big Rye Spice",
+    "frequency": 9,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Brandy",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Cake",
+    "frequency": 9,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Citrus Zest",
+    "frequency": 9,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Concord Grape",
+    "frequency": 9,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creamed Corn",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Raspberry",
+    "frequency": 9,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Cherry",
+    "frequency": 9,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Oak",
+    "frequency": 9,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Aged Oak",
+    "frequency": 9,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dryness",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Excellent",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fudge",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honey Graham Cracker",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Nectarine",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pleasant",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pomegranate Molasses",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rich Vanilla",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Coffee Bean",
+    "frequency": 9,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Root Beer",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Slightly Tannic",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Syrup",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Subtle Rye Spice",
+    "frequency": 9,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sugarcane",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Caramel",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vegetative",
+    "frequency": 9,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Wheat Grain",
+    "frequency": 9,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Whoppers Candy",
+    "frequency": 9,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bold Cinnamon Spice",
+    "frequency": 8,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bold Heat",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Brown Butter",
+    "frequency": 8,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Sweetness",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry Pie",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chewy Caramel",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chocolate Mousse",
+    "frequency": 8,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Roll",
+    "frequency": 8,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Coffee",
+    "frequency": 8,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Cinnamon",
+    "frequency": 8,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Cinnamon Stick",
+    "frequency": 8,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Tannic Oak",
+    "frequency": 8,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Earthiness",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fruit Punch",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Full-Bodied",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hops",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Incredibly Dry",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lavender",
+    "frequency": 8,
+    "category": "floral",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Dry Oak",
+    "frequency": 8,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Malty Undertone",
+    "frequency": 8,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Maple Candy",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mushroom",
+    "frequency": 8,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Oily Mouthfeel",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peach Cobbler",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peaches",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Powdered Sugar",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Punchy",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raw Grain",
+    "frequency": 8,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ripe Pear",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Corn",
+    "frequency": 8,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Robust",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Caramel",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Vanilla",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Cherries",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Strawberry Jam",
+    "frequency": 8,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet & Inviting",
+    "frequency": 8,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Bread",
+    "frequency": 8,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Malt",
+    "frequency": 8,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Whipped Cream",
+    "frequency": 8,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Approachable",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Berry Jam",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Tea",
+    "frequency": 7,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Blackberries",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Blueberry",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bootstrap Molasses",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Building Heat",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bundt Cake",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candy Apple",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry Cobbler",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chocolate Cake",
+    "frequency": 7,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Apple",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creamy",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dab Of Leather",
+    "frequency": 7,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Honey",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dark Maple Syrup",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Delicate",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dough",
+    "frequency": 7,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Fig",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Lingering Spice",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Evergreen",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Cut Grass",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hints Of Vanilla",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Kentucky Cream Pull Candy",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lightly Floral",
+    "frequency": 7,
+    "category": "floral",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Dry Heat",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Luxardo Cherries",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mango",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Maraschino Cherries",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mixed Berry Jam",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mixed Peppercorns",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Musty",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Passion Fruit",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peanut Brittle",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peppermint",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pipe Tobacco",
+    "frequency": 7,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pop Of Rye Spice",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rhubarb",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ripe Plum",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rye",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Salted Caramel",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sharp Oak",
+    "frequency": 7,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sharp Rye Spice",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Star Anise",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Strawberry Rhubarb",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Brown Sugar",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Nuts",
+    "frequency": 7,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Dry Oak",
+    "frequency": 7,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Malt",
+    "frequency": 7,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Spice",
+    "frequency": 7,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Cake",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Vanilla Pudding",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Warm Caramel",
+    "frequency": 7,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Warming",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Wet Stone",
+    "frequency": 7,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Peach",
+    "frequency": 7,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Young Oak",
+    "frequency": 7,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Aged Charred Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apples",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Astringent Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bananas Foster",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Barley",
+    "frequency": 6,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Berry Compote",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Black Licorice",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bold Spice",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bread Dough",
+    "frequency": 6,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bubblegum",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Building Rye Spice",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Butterscotch Hard Candy",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Campfire",
+    "frequency": 6,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candied Raisin",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Caramel Popcorn",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Carmel",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherries",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Bread",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Bun",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Frosting",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Classic Bourbon Scents",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Creaminess",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Crisp Apple",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cr\u00e8me Brul\u00e9e",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Seasoned Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fantastic",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "French Vanilla Ice Cream",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Dough",
+    "frequency": 6,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fresh Leather",
+    "frequency": 6,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fried Dough",
+    "frequency": 6,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Full",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle Heat",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle Lingering Spice",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Granny Smith Apples",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Grapes",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honeysuckle",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Intense",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Sweet-Spicy Mix",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lively",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Long Lasting",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Marmalade",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Peanut",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pepper Spice",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pink Peppercorn",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Prickly Heat",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Proof Shines Through",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ramp Up Of Heat",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Robust Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rush Of Rye Spice",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Salt Water Taffy",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Saltwater Taffy",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Slightly Herbal",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Cherry",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stout",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sugary Oak",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet & Savory",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Charred Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Syrup",
+    "frequency": 6,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tequila",
+    "frequency": 6,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Clove",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Weathered Oak",
+    "frequency": 6,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Chocolate",
+    "frequency": 6,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Grapes",
+    "frequency": 6,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "White Peppercorns",
+    "frequency": 6,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apple Caramel",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apple Juice",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Apple Peel",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baked Apple",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Baked Apples",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bakery Scents",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Berry Turnover",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Blackcurrant",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Bright & Lively",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burnt Orange",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Burst Of Rye Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Butterfinger Candy Bar",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Buttery Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cacao Nibs",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cake Batter",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candied Apple",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candied Fruits",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Candied Pecans",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cane Sugar",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Char",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Charred Dry Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry Syrup",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cherry Turnover",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chewy",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Chewy Mouthfeel",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cigar Wrapper",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Bundt Cake",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Slurry",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cinnamon Toast",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Classic Scents",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cola Syrup",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Concord Grapes",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Corn Oil",
+    "frequency": 5,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Cream",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dab Of Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Cherries",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Leather",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dried Raspberries",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Baking Chocolate",
+    "frequency": 5,
+    "category": "bitter",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Dry Chewy Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Floral Notes",
+    "frequency": 5,
+    "category": "floral",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Fruit Cup",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Funky Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Gentle Lingering Heat",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Ginger Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Golden Raisins",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Green Peppercorns",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Grilled Peaches",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Herbal Note",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Hibiscus",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honey Smacks Cereal",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Honeydew Melon",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lemongrass",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Baking Spices",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Cinnamon Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Lingering Warmth",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Luxardo Cherry",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mature Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Medium Body",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mild Heat",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mildly Dry",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Mineral Note",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Oak Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Oats",
+    "frequency": 5,
+    "category": "grain",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Old Leather",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Old Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Orange Cream",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Papaya",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pine Needles",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pomegranate",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Pound Cake",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Raspberries",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Currant",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Fruit",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Red Grape",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Rich & Sweet",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Coffee",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Roasted Mixed Nuts",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sage",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sawdust",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Seasoned Aged Oak",
+    "frequency": 5,
+    "category": "woody",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Slightly Earthy",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Smoky",
+    "frequency": 5,
+    "category": "smoky",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Soy Sauce",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spice On The Backend",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Apples",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Raisin",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Spiced Raisins",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Steeped Tea",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Apple",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Stewed Dark Fruits",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sugar Cookie",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Sweet Cinnamon Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tannic",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Tapering Spice",
+    "frequency": 5,
+    "category": "spicy",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Thin Vanilla",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Almond",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Marshmallows",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Pecan",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Toasted Walnut",
+    "frequency": 5,
+    "category": "savory",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Lemon",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Mint",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Raspberry",
+    "frequency": 5,
+    "category": "fruity",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Touch Of Syrup",
+    "frequency": 5,
+    "category": "sweet",
+    "confidence": 90,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Undulating Heat",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Very Long",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  },
+  {
+    "flavor": "Waffle Cone",
+    "frequency": 5,
+    "category": "other",
+    "confidence": 50,
+    "applicable_sections": [
+      "nose",
+      "palate",
+      "finish"
+    ]
+  }
+]

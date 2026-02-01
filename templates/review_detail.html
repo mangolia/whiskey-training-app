@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Details - {{ review.whiskey_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥃 Review Details</h1>
+            <p class="subtitle"><a href="{{ url_for('dashboard') }}">← Back to Dashboard</a></p>
+        </div>
+        
+        <div class="section">
+            <h2>Whiskey Information</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><strong>{{ review.whiskey_name }}</strong></td>
+                </tr>
+                {% if review.distillery %}
+                <tr>
+                    <th>Distillery</th>
+                    <td>{{ review.distillery }}</td>
+                </tr>
+                {% endif %}
+                <tr>
+                    <th>First Seen</th>
+                    <td>{{ review.first_seen_date or 'N/A' }}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Review Metadata</h2>
+            <table>
+                <tr>
+                    <th>Review ID</th>
+                    <td>{{ review.review_id }}</td>
+                </tr>
+                <tr>
+                    <th>Source Site</th>
+                    <td>{{ review.source_site }}</td>
+                </tr>
+                <tr>
+                    <th>Review Date</th>
+                    <td>{{ review.review_date or 'N/A' }}</td>
+                </tr>
+                <tr>
+                    <th>Date Scraped</th>
+                    <td>{{ review.date_scraped }}</td>
+                </tr>
+                <tr>
+                    <th>Source URL</th>
+                    <td><a href="{{ review.source_url }}" target="_blank">{{ review.source_url }}</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Basic Information</h2>
+            <table>
+                {% if review.classification %}
+                <tr>
+                    <th>Classification</th>
+                    <td>{{ review.classification }}</td>
+                </tr>
+                {% endif %}
+                {% if review.company %}
+                <tr>
+                    <th>Company</th>
+                    <td>{{ review.company }}</td>
+                </tr>
+                {% endif %}
+                {% if review.proof %}
+                <tr>
+                    <th>Proof</th>
+                    <td>{{ review.proof }}</td>
+                </tr>
+                {% endif %}
+                {% if review.age %}
+                <tr>
+                    <th>Age</th>
+                    <td>{{ review.age }}</td>
+                </tr>
+                {% endif %}
+                {% if review.mashbill %}
+                <tr>
+                    <th>Mashbill</th>
+                    <td>{{ review.mashbill }}</td>
+                </tr>
+                {% endif %}
+                {% if review.color %}
+                <tr>
+                    <th>Color</th>
+                    <td>{{ review.color }}</td>
+                </tr>
+                {% endif %}
+                {% if review.price %}
+                <tr>
+                    <th>Price</th>
+                    <td>{{ review.price }}</td>
+                </tr>
+                {% endif %}
+                {% if not (review.classification or review.company or review.proof or review.age or review.mashbill or review.color or review.price) %}
+                <tr>
+                    <td colspan="2" class="no-data">No basic information available</td>
+                </tr>
+                {% endif %}
+            </table>
+        </div>
+        
+        {% if review.nose or review.palate or review.finish %}
+        <div class="section">
+            <h2>Tasting Notes</h2>
+            {% if review.nose %}
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #667eea; margin-bottom: 10px;">Nose</h3>
+                <p style="white-space: pre-wrap; line-height: 1.6;">{{ review.nose }}</p>
+            </div>
+            {% endif %}
+            {% if review.palate %}
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #667eea; margin-bottom: 10px;">Palate</h3>
+                <p style="white-space: pre-wrap; line-height: 1.6;">{{ review.palate }}</p>
+            </div>
+            {% endif %}
+            {% if review.finish %}
+            <div style="margin-bottom: 20px;">
+                <h3 style="color: #667eea; margin-bottom: 10px;">Finish</h3>
+                <p style="white-space: pre-wrap; line-height: 1.6;">{{ review.finish }}</p>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+        
+        {% if review.rating %}
+        <div class="section">
+            <h2>Rating</h2>
+            <p style="font-size: 24px; font-weight: bold; color: #667eea;">{{ review.rating }}</p>
+        </div>
+        {% endif %}
+        
+        {% if review.overall_notes %}
+        <div class="section">
+            <h2>Overall Notes</h2>
+            <p style="white-space: pre-wrap; line-height: 1.6;">{{ review.overall_notes }}</p>
+        </div>
+        {% endif %}
+        
+        {% if review.additional_data %}
+        <div class="section">
+            <h2>Additional Data</h2>
+            <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre-wrap;">{{ review.additional_data }}</pre>
+        </div>
+        {% endif %}
+        
+        <div class="footer">
+            <p><a href="{{ url_for('dashboard') }}" style="color: white;">← Back to Dashboard</a></p>
+        </div>
+    </div>
+</body>
+</html>
+

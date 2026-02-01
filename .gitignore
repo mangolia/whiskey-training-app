@@ -1,0 +1,111 @@
+# ============================================================================
+# Python .gitignore for Whiskey Sensory Training App
+# ============================================================================
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Environment variables (NEVER commit - contain secrets!)
+.env
+.env.local
+.env.production
+.env.*.local
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================================================
+# Database Files - IMPORTANT CONFIGURATION
+# ============================================================================
+
+# First, ignore ALL .db files by default
+*.db
+*.sqlite
+*.sqlite3
+
+# Then, explicitly ALLOW our production databases
+# Why? They're small (16MB), static data, and required for deployment
+!databases/whiskey_production.db
+!databases/whiskey_reviews.db
+
+# Still ignore database journals and temp files
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Ignore backup databases (regenerated, not needed in repo)
+backups/*.db
+archive/databases/*.db
+
+# ============================================================================
+# Frontend - Node/React
+# ============================================================================
+
+# Node modules (NEVER commit - regenerated from package.json)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+
+# ============================================================================
+# Logs and Testing
+# ============================================================================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ============================================================================
+# Flask
+# ============================================================================
+
+instance/
+.webassets-cache
+
+# ============================================================================
+# Temporary and OS files
+# ============================================================================
+
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# ============================================================================
+# What WILL be committed (for your reference):
+# ============================================================================
+# ✅ Source code (*.py, *.js, *.jsx)
+# ✅ Documentation (*.md)
+# ✅ Dependencies (requirements.txt, package.json)
+# ✅ Production databases (databases/*.db) - SPECIAL CASE
+# ✅ Scripts (scripts/*.sh)
+# ✅ Configuration files (Procfile, vercel.json)
+#
+# ❌ Environment variables (.env)
+# ❌ Virtual environments (venv/, node_modules/)
+# ❌ Build outputs (dist/)
+# ❌ Logs and cache files
+# ❌ Backup databases

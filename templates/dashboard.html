@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskey Reviews Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🥃 Whiskey Reviews Database Dashboard</h1>
+            <p class="subtitle">Last Updated: <span id="last-update">{{ stats.last_review_captured or 'Never' }}</span></p>
+            <p class="subtitle">Database: whiskey_reviews.db</p>
+            <button id="run-scraper-btn" class="btn-primary">Run Scraper Now</button>
+            <div id="scraper-status" class="scraper-status"></div>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Reviews</h3>
+                <div class="value" id="total-reviews">{{ stats.total_reviews|int|comma }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>Unique Whiskeys</h3>
+                <div class="value" id="total-whiskeys">{{ stats.total_whiskeys|int|comma }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>Added Today</h3>
+                <div class="value" id="reviews-today">{{ stats.reviews_today|int }}</div>
+            </div>
+            <div class="stat-card">
+                <h3>Added This Week</h3>
+                <div class="value" id="reviews-week">{{ stats.reviews_this_week|int }}</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Last Captured</h2>
+            <table>
+                <tr>
+                    <th>Last Review Scraped</th>
+                    <td id="last-scraped">{{ stats.last_review_captured or 'No reviews yet' }}</td>
+                </tr>
+                <tr>
+                    <th>Last Review Published</th>
+                    <td id="last-published">{{ stats.last_review_published or 'N/A' }}</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Reviews by Source Site</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Source Site</th>
+                        <th style="text-align: right;">Count</th>
+                    </tr>
+                </thead>
+                <tbody id="reviews-by-site">
+                    {% for site, count in stats.reviews_by_site.items() %}
+                    <tr>
+                        <td>{{ site }}</td>
+                        <td style="text-align: right;">{{ count|int|comma }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Recent Reviews (Last 10)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Date Scraped</th>
+                        <th>Whiskey Name</th>
+                        <th>Link</th>
+                        <th>View Details</th>
+                    </tr>
+                </thead>
+                <tbody id="recent-reviews">
+                    {% for review in stats.recent_reviews %}
+                    <tr>
+                        <td>{{ review[0] }}</td>
+                        <td>{{ review[2] }}</td>
+                        <td>{{ review[1][:60] }}{% if review[1]|length > 60 %}...{% endif %}</td>
+                        <td><a href="{{ review[3] }}" target="_blank">View</a></td>
+                        <td><a href="{{ url_for('review_detail', review_id=review[0]) }}">View Details</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="section">
+            <h2>Errors & Issues (Last 30 Days)</h2>
+            {% if error_reports %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Source</th>
+                        <th>Status</th>
+                        <th>Found</th>
+                        <th>Added</th>
+                        <th>Error</th>
+                    </tr>
+                </thead>
+                <tbody id="error-reports">
+                    {% for report in error_reports %}
+                    <tr class="status-{{ report.status }}">
+                        <td>{{ report.run_date }}</td>
+                        <td>{{ report.source_site }}</td>
+                        <td>
+                            {% if report.status == 'success' %}✅{% endif %}
+                            {% if report.status == 'partial' %}⚠️{% endif %}
+                            {% if report.status == 'error' %}❌{% endif %}
+                            {% if report.status == 'skipped' %}⊘{% endif %}
+                            {{ report.status|upper }}
+                        </td>
+                        <td>{{ report.reviews_found }}</td>
+                        <td>{{ report.reviews_added }}</td>
+                        <td>
+                            {% if report.error_message %}
+                            <details>
+                                <summary>View Error</summary>
+                                <pre>{{ report.error_message }}</pre>
+                            </details>
+                            {% else %}
+                            -
+                            {% endif %}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="no-data">No errors in the last 30 days! 🎉</p>
+            {% endif %}
+        </div>
+        
+        <div class="section">
+            <h2>Daily Summaries (Last 30 Days)</h2>
+            {% if daily_summaries %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Found</th>
+                        <th>Added</th>
+                        <th>Duplicates</th>
+                        <th>Errors</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="daily-summaries">
+                    {% for summary in daily_summaries %}
+                    <tr class="status-{{ summary.status }}">
+                        <td>{{ summary.summary_date }}</td>
+                        <td>
+                            {% if summary.status == 'success' %}✅{% endif %}
+                            {% if summary.status == 'partial' %}⚠️{% endif %}
+                            {% if summary.status == 'error' %}❌{% endif %}
+                            {{ summary.status|upper }}
+                        </td>
+                        <td>{{ summary.total_reviews_found }}</td>
+                        <td>{{ summary.total_reviews_added }}</td>
+                        <td>{{ summary.total_duplicates }}</td>
+                        <td>{{ summary.total_errors }}</td>
+                        <td>{{ "%.2f"|format(summary.execution_time or 0) }}s</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p class="no-data">No daily summaries yet.</p>
+            {% endif %}
+        </div>
+        
+        <div class="footer">
+            <p>Auto-refreshing every {{ config.dashboard.auto_refresh_seconds }} seconds</p>
+            <p>Generated by Whiskey Scraper Dashboard</p>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>
+

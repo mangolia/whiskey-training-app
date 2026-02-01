@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whiskey Flavor Review - 4,941 Flavors</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        .subtitle { font-size: 1.2em; opacity: 0.9; }
+        .controls {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .search-box { flex: 1; min-width: 300px; }
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .filter-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .filter-group label {
+            font-weight: 600;
+            color: #495057;
+        }
+        .filter-group select {
+            padding: 10px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .stats {
+            padding: 20px 30px;
+            background: #fff3cd;
+            border-bottom: 2px solid #ffc107;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .stat { text-align: center; }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        .flavor-list {
+            padding: 30px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .flavor-item {
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
+        }
+        .flavor-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .flavor-name {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #495057;
+        }
+        .flavor-frequency {
+            font-weight: bold;
+            color: #667eea;
+            background: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+            font-size: 1.2em;
+        }
+        .frequency-badge {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        .badge-very-common { background: #28a745; color: white; }
+        .badge-common { background: #17a2b8; color: white; }
+        .badge-moderate { background: #ffc107; color: #333; }
+        .badge-occasional { background: #fd7e14; color: white; }
+        .badge-rare { background: #6c757d; color: white; }
+        .badge-very-rare { background: #e83e8c; color: white; }
+        .badge-single { background: #dee2e6; color: #495057; }
+        .error {
+            padding: 40px;
+            text-align: center;
+            color: #dc3545;
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            border-radius: 8px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🥃 Whiskey Flavor Review</h1>
+            <div class="subtitle">4,941 Unique Flavors Extracted from 2,147 Reviews</div>
+        </header>
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-value" id="totalFlavors">Loading...</div>
+                <div class="stat-label">Total Flavors</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="filteredCount">-</div>
+                <div class="stat-label">Showing</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value" id="totalMentions">-</div>
+                <div class="stat-label">Total Mentions</div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search flavors... (e.g., vanilla, oak, cherry)">
+            </div>
+            <div class="filter-group">
+                <label for="frequencyFilter">Filter:</label>
+                <select id="frequencyFilter">
+                    <option value="all">All Flavors</option>
+                    <option value="500">Very Common (500+)</option>
+                    <option value="100">Common (100+)</option>
+                    <option value="50">Moderate (50+)</option>
+                    <option value="20">Occasional (20+)</option>
+                    <option value="10">Rare (10+)</option>
+                    <option value="5">Very Rare (5+)</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="sortOrder">Sort:</label>
+                <select id="sortOrder">
+                    <option value="frequency">By Frequency</option>
+                    <option value="alpha">Alphabetical</option>
+                </select>
+            </div>
+        </div>
+        <div class="flavor-list" id="flavorList">
+            <div class="no-results">Loading flavors...</div>
+        </div>
+    </div>
+
+    <script>
+        let flavorsData = [];
+
+        // Try to load the data
+        fetch('data/final_valid_flavors_20260115_232914.json')
+            .then(response => {
+                if (!response.ok) throw new Error('File not found');
+                return response.json();
+            })
+            .then(data => {
+                flavorsData = data;
+                const totalMentions = data.reduce((sum, f) => sum + f.frequency, 0);
+                document.getElementById('totalFlavors').textContent = data.length.toLocaleString();
+                document.getElementById('totalMentions').textContent = totalMentions.toLocaleString();
+                renderFlavors(flavorsData);
+            })
+            .catch(error => {
+                document.getElementById('flavorList').innerHTML = `
+                    <div class="error">
+                        <h2>⚠️ Unable to load flavor data</h2>
+                        <p style="margin-top: 15px;">The file <code>data/final_valid_flavors_20260115_232914.json</code> could not be found.</p>
+                        <p style="margin-top: 10px;">Make sure this HTML file is in the whiskey-scraper directory.</p>
+                        <p style="margin-top: 20px; font-size: 0.9em; color: #6c757d;">Error: ${error.message}</p>
+                    </div>
+                `;
+            });
+
+        function getFrequencyBadge(frequency) {
+            if (frequency >= 500) return '<span class="frequency-badge badge-very-common">Very Common</span>';
+            if (frequency >= 100) return '<span class="frequency-badge badge-common">Common</span>';
+            if (frequency >= 50) return '<span class="frequency-badge badge-moderate">Moderate</span>';
+            if (frequency >= 20) return '<span class="frequency-badge badge-occasional">Occasional</span>';
+            if (frequency >= 10) return '<span class="frequency-badge badge-rare">Rare</span>';
+            if (frequency >= 5) return '<span class="frequency-badge badge-very-rare">Very Rare</span>';
+            return '<span class="frequency-badge badge-single">Single/Few</span>';
+        }
+
+        function renderFlavors(flavors) {
+            const flavorList = document.getElementById('flavorList');
+            if (flavors.length === 0) {
+                flavorList.innerHTML = '<div class="no-results">😢 No flavors match your search.</div>';
+                return;
+            }
+            flavorList.innerHTML = flavors.map((flavor, index) => `
+                <div class="flavor-item">
+                    <div>
+                        <span class="flavor-name">${index + 1}. ${flavor.flavor}</span>
+                        ${getFrequencyBadge(flavor.frequency)}
+                    </div>
+                    <div class="flavor-frequency">${flavor.frequency} mentions</div>
+                </div>
+            `).join('');
+            document.getElementById('filteredCount').textContent = flavors.length.toLocaleString();
+        }
+
+        function filterAndSort() {
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const frequencyFilter = document.getElementById('frequencyFilter').value;
+            const sortOrder = document.getElementById('sortOrder').value;
+
+            let filtered = flavorsData.filter(flavor => {
+                const matchesSearch = flavor.flavor.toLowerCase().includes(searchTerm);
+                const matchesFrequency = frequencyFilter === 'all' || flavor.frequency >= parseInt(frequencyFilter);
+                return matchesSearch && matchesFrequency;
+            });
+
+            if (sortOrder === 'alpha') {
+                filtered.sort((a, b) => a.flavor.localeCompare(b.flavor));
+            } else {
+                filtered.sort((a, b) => b.frequency - a.frequency);
+            }
+
+            renderFlavors(filtered);
+        }
+
+        document.getElementById('searchInput').addEventListener('input', filterAndSort);
+        document.getElementById('frequencyFilter').addEventListener('change', filterAndSort);
+        document.getElementById('sortOrder').addEventListener('change', filterAndSort);
+    </script>
+</body>
+</html>

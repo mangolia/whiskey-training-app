@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.whiskey-scraper.daily</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/michaelangolia/whiskey-scraper/venv/bin/python</string>
+        <string>/Users/michaelangolia/whiskey-scraper/automated_daily_check.py</string>
+    </array>
+    
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>23</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+        <key>Wake</key>
+        <true/>
+    </dict>
+    
+    <key>StandardOutPath</key>
+    <string>/Users/michaelangolia/whiskey-scraper/logs/launchd.out</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/Users/michaelangolia/whiskey-scraper/logs/launchd.err</string>
+    
+    <key>RunAtLoad</key>
+    <false/>
+    
+    <key>KeepAlive</key>
+    <false/>
+    
+    <key>WorkingDirectory</key>
+    <string>/Users/michaelangolia/whiskey-scraper</string>
+    
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+</dict>
+</plist>
+

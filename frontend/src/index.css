@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-unspoken-cream text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-unspoken-navy text-white px-6 py-3 rounded font-semibold hover:bg-unspoken-navy-dark transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-unspoken-navy px-6 py-3 rounded font-semibold border-2 border-unspoken-navy hover:bg-unspoken-navy hover:text-white transition-colors;
+  }
+  
+  .card {
+    @apply bg-white rounded shadow-card p-6 hover:shadow-card-hover transition-shadow;
+  }
+  
+  .descriptor-option {
+    @apply bg-white border-2 border-gray-300 rounded p-4 text-center cursor-pointer hover:border-unspoken-navy transition-colors;
+  }
+  
+  .descriptor-option-selected {
+    @apply bg-unspoken-navy text-white border-unspoken-navy;
+  }
+}

@@ -1,0 +1,71 @@
+# Whiskey Scraper Configuration File
+# ===================================
+
+# Schedule Settings
+schedule:
+  hour: 23                    # 11pm
+  minute: 0
+  timezone: "America/New_York"  # Handles EST/EDT automatically
+  wake_from_sleep: true        # Wake Mac from sleep to run
+
+# Scrapers Configuration
+scrapers:
+  enabled:
+    - breaking_bourbon
+  # Future scrapers:
+  # - whiskey_advocate
+  # - bourbon_banter
+
+# Logging Configuration
+logging:
+  level: "INFO"                # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  retention_days: 90           # Keep logs for 90 days
+  log_dir: "logs"              # Directory for log files
+  rotation: "daily"            # daily or size-based
+
+# Retry Configuration
+retry:
+  max_attempts: 3
+  delay_seconds: [300, 900, 1800]  # Exponential backoff: 5min, 15min, 30min
+  retry_on_network_error: true
+  retry_on_database_error: true
+  retry_on_parsing_error: false    # Don't retry parsing errors (likely permanent)
+
+# Battery & Power Settings
+power:
+  skip_on_battery: true        # Skip scheduled run if on battery
+  allow_manual_on_battery: true  # Allow manual runs even on battery
+
+# Dashboard Configuration
+dashboard:
+  port: 5000
+  host: "127.0.0.1"            # Localhost only for security
+  auto_refresh_seconds: 30     # Auto-refresh dashboard every 30 seconds
+
+# Paths (absolute paths for reliability)
+paths:
+  project_root: "/Users/michaelangolia/whiskey-scraper"
+  venv_python: "/Users/michaelangolia/whiskey-scraper/venv/bin/python"
+  database: "/Users/michaelangolia/whiskey-scraper/whiskey_reviews.db"
+
+# Backfill Configuration
+backfill:
+  auto_detect_on_startup: true    # Auto-detect and backfill on scheduled runs
+  max_days_to_backfill: 7          # Maximum days to auto-backfill
+  lookback_window_days: 30         # How many days to check for gaps
+  skip_if_recent_run: true         # Skip if scraper ran in last 2 hours
+
+# Historical Scrape Configuration
+historical_scrape:
+  rate_limit_seconds: 2
+  max_retries: 3
+  retry_backoff_base: 2
+  progress_save_interval: 10
+  request_timeout: 30
+  
+  # Browser automation (if needed - fallback only, sitemap is preferred)
+  use_browser_automation: false  # Set to true if sitemap approach fails
+  browser_headless: true
+  
+  # Rate limit backoff for 429 errors (in seconds)
+  rate_limit_backoff: [30, 60, 300, -1]  # -1 means stop

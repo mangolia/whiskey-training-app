@@ -1,29 +1,22 @@
-import axios from 'axios';
+import config from '../config';
 
-// API base URL - uses proxy in development
-const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+const API_BASE_URL = config.API_URL;
 
-// Create axios instance
-const apiClient = axios.create({
-  baseURL: API_BASE_URL,
-  timeout: 10000,
-  headers: {
-    'Content-Type': 'application/json',
-  },
-});
-
-// API methods
-export const api = {
-  // Health check
-  health: () => apiClient.get('/api/health'),
-
-  // Search whiskeys
-  searchWhiskeys: (query) => apiClient.get('/api/whiskeys/search', {
-    params: { q: query }
-  }),
-
-  // Get quiz for a whiskey
-  getQuiz: (whiskeyId) => apiClient.get(`/api/quiz/${whiskeyId}`),
+export const searchWhiskeys = async (query) => {
+  const response = await fetch(
+    `${API_BASE_URL}/api/whiskeys/search?q=${encodeURIComponent(query)}`
+  );
+  if (!response.ok) throw new Error('Search failed');
+  return response.json();
 };
 
-export default apiClient;
+export const getQuiz = async (whiskeyId) => {
+  const response = await fetch(`${API_BASE_URL}/api/quiz/${whiskeyId}`);
+  if (!response.ok) throw new Error('Quiz generation failed');
+  return response.json();
+};
+
+export default {
+  searchWhiskeys,
+  getQuiz
+};

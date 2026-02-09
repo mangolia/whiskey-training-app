@@ -2,7 +2,7 @@ import config from '../config';
 
 const API_BASE_URL = config.API_URL;
 
-const api = {
+export const api = {
   searchWhiskeys: async (query) => {
     const response = await fetch(
       `${API_BASE_URL}/api/whiskeys/search?q=${encodeURIComponent(query)}`
@@ -17,5 +17,3 @@ const api = {
     return response.json();
   }
 };
-
-export default api;

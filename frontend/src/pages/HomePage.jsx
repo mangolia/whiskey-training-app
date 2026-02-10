@@ -18,7 +18,7 @@ function HomePage() {
 
     try {
       const response = await api.searchWhiskeys(searchQuery);
-      setResults(response.data.results);
+      setResults(response.results);
     } catch (err) {
       setError('Failed to search whiskeys. Please try again.');
       console.error('Search error:', err);

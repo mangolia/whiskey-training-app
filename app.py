@@ -193,7 +193,13 @@ def get_quiz(whiskey_id):
         # Generate quiz for each section
         quiz = {}
         for section in ['nose', 'palate', 'finish']:
-            quiz[section] = generate_quiz_section(cursor, whiskey_id, section)
+            section_data = generate_quiz_section(cursor, whiskey_id, section)
+            if section_data is None:
+                conn.close()
+                return jsonify({
+                    "error": f"No tasting data available for this whiskey"
+                }), 404
+            quiz[section] = section_data
 
         conn.close()
 
@@ -235,6 +241,10 @@ def generate_quiz_section(cursor, whiskey_id, section):
     """, (whiskey_id, section))
 
     correct_descriptors = [dict_from_row(row) for row in cursor.fetchall()]
+
+    # Check if whiskey has any descriptors
+    if len(correct_descriptors) == 0:
+        return None  # Will be handled by caller
 
     # Get INCORRECT descriptors from OTHER whiskeys
     cursor.execute("""

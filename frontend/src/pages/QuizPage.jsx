@@ -18,20 +18,22 @@ function QuizPage() {
   });
 
   useEffect(() => {
+    const loadQuiz = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        const response = await api.getQuiz(whiskeyId);
+        setQuizData(response);
+        setLoading(false);
+      } catch (err) {
+        setError('Failed to load quiz. Please try again.');
+        setLoading(false);
+        console.error('Quiz load error:', err);
+      }
+    };
+
     loadQuiz();
   }, [whiskeyId]);
-
-  const loadQuiz = async () => {
-    try {
-      const response = await api.getQuiz(whiskeyId);
-      setQuizData(response);
-      setLoading(false);
-    } catch (err) {
-      setError('Failed to load quiz. Please try again.');
-      setLoading(false);
-      console.error('Quiz load error:', err);
-    }
-  };
 
   const toggleDescriptor = (descriptorId) => {
     setSelections(prev => ({
@@ -77,6 +79,11 @@ function QuizPage() {
         </div>
       </div>
     );
+  }
+
+  // Safety check: ensure quizData is properly loaded
+  if (!quizData || !quizData.quiz) {
+    return null;
   }
 
   const sectionData = quizData.quiz[currentSection];

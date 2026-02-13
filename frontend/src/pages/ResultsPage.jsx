@@ -5,7 +5,7 @@ function ResultsPage() {
   const navigate = useNavigate();
   const { quizData, selections } = location.state || {};
 
-  if (!quizData || !selections) {
+  if (!quizData || !quizData.quiz || !quizData.whiskey || !selections) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="text-center">

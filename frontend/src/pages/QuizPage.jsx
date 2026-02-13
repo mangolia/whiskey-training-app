@@ -24,7 +24,7 @@ function QuizPage() {
   const loadQuiz = async () => {
     try {
       const response = await api.getQuiz(whiskeyId);
-      setQuizData(response.data);
+      setQuizData(response);
       setLoading(false);
     } catch (err) {
       setError('Failed to load quiz. Please try again.');

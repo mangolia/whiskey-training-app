@@ -201,7 +201,58 @@ def search_whiskeys():
         }), 500
 
 # ============================================================================
-# Endpoint 3: Get Quiz Data
+# Endpoint 3: Get Distilleries List
+# ============================================================================
+
+@app.route('/api/distilleries', methods=['GET'])
+def get_distilleries():
+    """
+    Get alphabetical list of all distilleries with whiskey counts
+
+    Returns:
+      {
+        "distilleries": [
+          {
+            "name": "Buffalo Trace",
+            "whiskey_count": 23
+          },
+          ...
+        ],
+        "total": 621
+      }
+    """
+    try:
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+
+            # Get distilleries with counts, ordered alphabetically
+            cursor.execute("""
+                SELECT
+                    distillery as name,
+                    COUNT(*) as whiskey_count
+                FROM whiskeys
+                WHERE distillery IS NOT NULL
+                  AND distillery != ''
+                GROUP BY distillery
+                ORDER BY distillery COLLATE NOCASE
+            """)
+
+            distilleries = [dict_from_row(row) for row in cursor.fetchall()]
+
+        logger.info(f"Distilleries list returned {len(distilleries)} distilleries")
+        return jsonify({
+            "distilleries": distilleries,
+            "total": len(distilleries)
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Failed to fetch distilleries: {str(e)}", exc_info=True)
+        return jsonify({
+            "error": "An error occurred while fetching distilleries. Please try again."
+        }), 500
+
+# ============================================================================
+# Endpoint 4: Get Quiz Data
 # ============================================================================
 
 @app.route('/api/quiz/<int:whiskey_id>', methods=['GET'])
@@ -393,6 +444,7 @@ if __name__ == '__main__':
     logger.info("Endpoints:")
     logger.info("  GET  /api/health")
     logger.info("  GET  /api/whiskeys/search?q=<query>")
+    logger.info("  GET  /api/distilleries")
     logger.info("  GET  /api/quiz/<whiskey_id>")
     logger.info("Server starting on http://localhost:5001")
     logger.info("=" * 80)

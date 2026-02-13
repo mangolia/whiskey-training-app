@@ -1,23 +1,35 @@
-import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { api } from '../api/client';
 
 function HomePage() {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [results, setResults] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const navigate = useNavigate();
 
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    if (!searchQuery.trim()) return;
+  // Handle pre-filled search from distilleries page
+  useEffect(() => {
+    if (location.state?.searchQuery) {
+      const query = location.state.searchQuery;
+      setSearchQuery(query);
+      // Trigger search automatically
+      performSearch(query);
+      // Clear the state so it doesn't trigger again on back navigation
+      navigate('/', { replace: true });
+    }
+  }, [location.state, navigate]);
+
+  const performSearch = async (query) => {
+    if (!query.trim()) return;
 
     setLoading(true);
     setError(null);
 
     try {
-      const response = await api.searchWhiskeys(searchQuery);
+      const response = await api.searchWhiskeys(query);
       setResults(response.results);
     } catch (err) {
       setError('Failed to search whiskeys. Please try again.');
@@ -25,6 +37,11 @@ function HomePage() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    performSearch(searchQuery);
   };
 
   const handleSelectWhiskey = (whiskey) => {

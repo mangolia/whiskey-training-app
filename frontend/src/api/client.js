@@ -11,6 +11,12 @@ export const api = {
     return response.json();
   },
 
+  getDistilleries: async () => {
+    const response = await fetch(`${API_BASE_URL}/api/distilleries`);
+    if (!response.ok) throw new Error('Failed to fetch distilleries');
+    return response.json();
+  },
+
   getQuiz: async (whiskeyId) => {
     const response = await fetch(`${API_BASE_URL}/api/quiz/${whiskeyId}`);
     if (!response.ok) throw new Error('Quiz generation failed');

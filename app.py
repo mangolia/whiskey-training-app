@@ -9,9 +9,28 @@ from flask_cors import CORS
 import sqlite3
 from pathlib import Path
 import random
+import re
+import os
+import logging
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(name)s: %(message)s',
+    handlers=[logging.StreamHandler()]
+)
+logger = logging.getLogger(__name__)
+
+# Configure CORS with specific origins
+ALLOWED_ORIGINS = [
+    os.getenv('FRONTEND_URL', 'https://whiskey-training-app.vercel.app'),
+    'http://localhost:5173',  # Development frontend
+    'http://localhost:5001',  # Local testing
+]
+CORS(app, origins=ALLOWED_ORIGINS)
+logger.info(f"CORS enabled for origins: {ALLOWED_ORIGINS}")
 
 # Database path
 DB_PATH = Path(__file__).parent / "databases" / "whiskey_production.db"
@@ -21,7 +40,7 @@ DB_PATH = Path(__file__).parent / "databases" / "whiskey_production.db"
 # ============================================================================
 
 def get_db_connection():
-    """Create database connection"""
+    """Create database connection with context manager support"""
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row  # Return rows as dictionaries
     return conn
@@ -29,6 +48,58 @@ def get_db_connection():
 def dict_from_row(row):
     """Convert sqlite3.Row to dictionary"""
     return dict(zip(row.keys(), row))
+
+# ============================================================================
+# Utility Functions
+# ============================================================================
+
+def create_slug(name):
+    """
+    Create URL-safe slug from whiskey name
+
+    Examples:
+        "Jack Daniel's Old No. 7" -> "jack-daniels-old-no-7"
+        "Maker's Mark 46" -> "makers-mark-46"
+        "Old Forester 1920 (Prohibition Style)" -> "old-forester-1920-prohibition-style"
+    """
+    if not name:
+        return ""
+
+    # Convert to lowercase
+    slug = name.lower()
+
+    # Remove all non-alphanumeric characters except spaces and hyphens
+    slug = re.sub(r'[^a-z0-9\s-]', '', slug)
+
+    # Replace multiple spaces/hyphens with single hyphen
+    slug = re.sub(r'[-\s]+', '-', slug)
+
+    # Remove leading/trailing hyphens
+    slug = slug.strip('-')
+
+    return slug
+
+def validate_search_query(query):
+    """
+    Validate and sanitize search query
+
+    Returns: (is_valid, sanitized_query, error_message)
+    """
+    if not query:
+        return False, None, "Query parameter 'q' is required"
+
+    # Check length
+    if len(query) > 100:
+        return False, None, "Query too long (max 100 characters)"
+
+    # Sanitize: remove potentially problematic characters but keep useful ones
+    # Keep: alphanumeric, spaces, hyphens, apostrophes (for Jack Daniel's etc)
+    sanitized = re.sub(r'[^\w\s\'-]', '', query)
+
+    if not sanitized.strip():
+        return False, None, "Invalid search query"
+
+    return True, sanitized.strip(), None
 
 # ============================================================================
 # Endpoint 1: Health Check
@@ -41,12 +112,12 @@ def health_check():
     Returns API status and database connectivity
     """
     try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
-        cursor.execute("SELECT COUNT(*) as count FROM whiskeys")
-        whiskey_count = cursor.fetchone()['count']
-        conn.close()
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT COUNT(*) as count FROM whiskeys")
+            whiskey_count = cursor.fetchone()['count']
 
+        logger.info(f"Health check successful: {whiskey_count} whiskeys in database")
         return jsonify({
             "status": "ok",
             "database": "connected",
@@ -54,10 +125,11 @@ def health_check():
         }), 200
 
     except Exception as e:
+        logger.error(f"Health check failed: {str(e)}", exc_info=True)
         return jsonify({
             "status": "error",
             "database": "disconnected",
-            "error": str(e)
+            "message": "Database connection failed"
         }), 500
 
 # ============================================================================
@@ -87,44 +159,45 @@ def search_whiskeys():
       }
     """
     query = request.args.get('q', '').strip()
-    limit = request.args.get('limit', 20, type=int)
+    limit = min(request.args.get('limit', 20, type=int), 50)  # Cap at 50
 
-    if not query:
-        return jsonify({
-            "error": "Query parameter 'q' is required"
-        }), 400
+    # Validate and sanitize query
+    is_valid, sanitized_query, error_msg = validate_search_query(query)
+    if not is_valid:
+        logger.warning(f"Invalid search query: {query}")
+        return jsonify({"error": error_msg}), 400
 
     try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
 
-        # Search whiskeys by name (case-insensitive LIKE)
-        cursor.execute("""
-            SELECT whiskey_id, name, distillery
-            FROM whiskeys
-            WHERE name LIKE ?
-            ORDER BY name
-            LIMIT ?
-        """, (f"%{query}%", limit))
+            # Search whiskeys by name (case-insensitive LIKE)
+            cursor.execute("""
+                SELECT whiskey_id, name, distillery
+                FROM whiskeys
+                WHERE name LIKE ?
+                ORDER BY name
+                LIMIT ?
+            """, (f"%{sanitized_query}%", limit))
 
-        results = []
-        for row in cursor.fetchall():
-            whiskey = dict_from_row(row)
-            # Generate URL-friendly slug
-            whiskey['slug'] = whiskey['name'].lower().replace(' ', '-').replace('(', '').replace(')', '')
-            results.append(whiskey)
+            results = []
+            for row in cursor.fetchall():
+                whiskey = dict_from_row(row)
+                # Generate URL-friendly slug using proper function
+                whiskey['slug'] = create_slug(whiskey['name'])
+                results.append(whiskey)
 
-        conn.close()
-
+        logger.info(f"Search query '{sanitized_query}' returned {len(results)} results")
         return jsonify({
-            "query": query,
+            "query": sanitized_query,
             "count": len(results),
             "results": results
         }), 200
 
     except Exception as e:
+        logger.error(f"Search failed for query '{sanitized_query}': {str(e)}", exc_info=True)
         return jsonify({
-            "error": str(e)
+            "error": "An error occurred while searching. Please try again."
         }), 500
 
 # ============================================================================
@@ -154,55 +227,54 @@ def get_quiz(whiskey_id):
       }
     """
     try:
-        conn = get_db_connection()
-        cursor = conn.cursor()
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
 
-        # Get whiskey details
-        cursor.execute("""
-            SELECT whiskey_id, name, distillery
-            FROM whiskeys
-            WHERE whiskey_id = ?
-        """, (whiskey_id,))
+            # Get whiskey details
+            cursor.execute("""
+                SELECT whiskey_id, name, distillery
+                FROM whiskeys
+                WHERE whiskey_id = ?
+            """, (whiskey_id,))
 
-        whiskey_row = cursor.fetchone()
-        if not whiskey_row:
-            conn.close()
-            return jsonify({
-                "error": f"Whiskey with id {whiskey_id} not found"
-            }), 404
-
-        whiskey = dict_from_row(whiskey_row)
-
-        # Get source review URLs for this whiskey
-        cursor.execute("""
-            SELECT DISTINCT source_site, source_url
-            FROM reviews
-            WHERE whiskey_id = ?
-            AND source_url IS NOT NULL
-            ORDER BY source_site
-        """, (whiskey_id,))
-
-        source_reviews = [
-            {
-                "site": row['source_site'],
-                "url": row['source_url']
-            }
-            for row in cursor.fetchall()
-        ]
-
-        # Generate quiz for each section
-        quiz = {}
-        for section in ['nose', 'palate', 'finish']:
-            section_data = generate_quiz_section(cursor, whiskey_id, section)
-            if section_data is None:
-                conn.close()
+            whiskey_row = cursor.fetchone()
+            if not whiskey_row:
+                logger.warning(f"Quiz requested for non-existent whiskey_id: {whiskey_id}")
                 return jsonify({
-                    "error": f"No tasting data available for this whiskey"
+                    "error": "Whiskey not found"
                 }), 404
-            quiz[section] = section_data
 
-        conn.close()
+            whiskey = dict_from_row(whiskey_row)
 
+            # Get source review URLs for this whiskey
+            cursor.execute("""
+                SELECT DISTINCT source_site, source_url
+                FROM reviews
+                WHERE whiskey_id = ?
+                AND source_url IS NOT NULL
+                ORDER BY source_site
+            """, (whiskey_id,))
+
+            source_reviews = [
+                {
+                    "site": row['source_site'],
+                    "url": row['source_url']
+                }
+                for row in cursor.fetchall()
+            ]
+
+            # Generate quiz for each section
+            quiz = {}
+            for section in ['nose', 'palate', 'finish']:
+                section_data = generate_quiz_section(cursor, whiskey_id, section)
+                if section_data is None:
+                    logger.warning(f"No tasting data for whiskey_id {whiskey_id}, section {section}")
+                    return jsonify({
+                        "error": "No tasting data available for this whiskey"
+                    }), 404
+                quiz[section] = section_data
+
+        logger.info(f"Generated quiz for whiskey_id {whiskey_id}: {whiskey['name']}")
         return jsonify({
             "whiskey": {
                 "id": whiskey['whiskey_id'],
@@ -214,8 +286,9 @@ def get_quiz(whiskey_id):
         }), 200
 
     except Exception as e:
+        logger.error(f"Quiz generation failed for whiskey_id {whiskey_id}: {str(e)}", exc_info=True)
         return jsonify({
-            "error": str(e)
+            "error": "An error occurred while generating the quiz. Please try again."
         }), 500
 
 def generate_quiz_section(cursor, whiskey_id, section):
@@ -314,14 +387,14 @@ def generate_quiz_section(cursor, whiskey_id, section):
 # ============================================================================
 
 if __name__ == '__main__':
-    print("=" * 80)
-    print("WHISKEY SENSORY TRAINING API")
-    print("=" * 80)
-    print("\nEndpoints:")
-    print("  GET  /api/health")
-    print("  GET  /api/whiskeys/search?q=<query>")
-    print("  GET  /api/quiz/<whiskey_id>")
-    print("\nServer starting on http://localhost:5001")
-    print("=" * 80)
+    logger.info("=" * 80)
+    logger.info("WHISKEY SENSORY TRAINING API")
+    logger.info("=" * 80)
+    logger.info("Endpoints:")
+    logger.info("  GET  /api/health")
+    logger.info("  GET  /api/whiskeys/search?q=<query>")
+    logger.info("  GET  /api/quiz/<whiskey_id>")
+    logger.info("Server starting on http://localhost:5001")
+    logger.info("=" * 80)
 
     app.run(debug=True, port=5001, host='0.0.0.0')

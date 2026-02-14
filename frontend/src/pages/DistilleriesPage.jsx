@@ -34,50 +34,46 @@ function DistilleriesPage() {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="text-center">
-          <p className="text-xl">Loading distilleries...</p>
-        </div>
+      <div className="text-center py-8">
+        <p className="text-xl">Loading distilleries...</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-          {error}
-        </div>
+      <div className="bg-error text-error-foreground px-4 py-3 rounded-lg">
+        {error}
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="space-y-6 pt-6">
       {/* Header */}
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold text-unspoken-navy mb-2">
-          Distilleries
-        </h1>
-        <p className="text-gray-600">
+      <div className="mb-6">
+        <h1 className="mb-2">Distilleries</h1>
+        <p style={{ color: 'var(--text-secondary)' }}>
           Browse {distilleries.length} distilleries in our database
         </p>
       </div>
 
       {/* Distilleries List */}
-      <div className="bg-white rounded-lg shadow-md">
+      <div className="space-y-3">
         {distilleries.map((distillery, index) => (
           <div
             key={index}
             onClick={() => handleDistilleryClick(distillery.name)}
-            className="px-6 py-4 border-b border-gray-200 hover:bg-gray-50 cursor-pointer transition-colors flex justify-between items-center last:border-b-0"
+            className="card cursor-pointer"
           >
-            <span className="text-unspoken-navy font-medium">
-              {distillery.name}
-            </span>
-            <span className="text-gray-500 text-sm">
-              {distillery.whiskey_count} {distillery.whiskey_count === 1 ? 'whiskey' : 'whiskeys'}
-            </span>
+            <div className="flex justify-between items-center">
+              <span className="font-medium" style={{ color: 'var(--secondary)' }}>
+                {distillery.name}
+              </span>
+              <span className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+                {distillery.whiskey_count} {distillery.whiskey_count === 1 ? 'whiskey' : 'whiskeys'}
+              </span>
+            </div>
           </div>
         ))}
       </div>

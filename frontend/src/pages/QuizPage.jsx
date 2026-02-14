@@ -63,20 +63,16 @@ function QuizPage() {
 
   if (loading) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="text-center">
-          <p className="text-xl">Loading quiz...</p>
-        </div>
+      <div className="text-center py-8">
+        <p className="text-xl">Loading quiz...</p>
       </div>
     );
   }
 
   if (error) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
-          {error}
-        </div>
+      <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded">
+        {error}
       </div>
     );
   }
@@ -89,7 +85,7 @@ function QuizPage() {
   const sectionData = quizData.quiz[currentSection];
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="space-y-6 pt-4">
       {/* Whiskey Info */}
       <div className="text-center mb-8">
         <h2 className="mb-2">{quizData.whiskey.name}</h2>

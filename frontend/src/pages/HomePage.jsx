@@ -49,7 +49,7 @@ function HomePage() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="space-y-6 pt-6">
       <div className="text-center mb-8">
         <h1 className="mb-4">Train Your Palate</h1>
         <p className="text-lg" style={{ color: 'var(--text-secondary)' }}>

@@ -92,39 +92,45 @@ function QuizPage() {
     <div className="max-w-4xl mx-auto px-4 py-8">
       {/* Whiskey Info */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl font-bold text-unspoken-navy mb-2">
-          {quizData.whiskey.name}
-        </h1>
+        <h2 className="mb-2">{quizData.whiskey.name}</h2>
         {quizData.whiskey.distillery && (
-          <p className="text-gray-600">{quizData.whiskey.distillery}</p>
+          <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+            {quizData.whiskey.distillery}
+          </p>
         )}
       </div>
 
-      {/* Progress Indicator */}
-      <div className="flex justify-center gap-4 mb-8">
-        <span className={currentSection === 'nose' ? 'font-bold text-unspoken-navy' : 'text-gray-400'}>
+      {/* Tab Navigation */}
+      <div className="grid grid-cols-3 gap-3 mb-8 px-1">
+        <button
+          onClick={() => setCurrentSection('nose')}
+          className={currentSection === 'nose' ? 'tab-button tab-button-active' : 'tab-button tab-button-inactive'}
+        >
           Nose
-        </span>
-        <span className={currentSection === 'palate' ? 'font-bold text-unspoken-navy' : 'text-gray-400'}>
+        </button>
+        <button
+          onClick={() => setCurrentSection('palate')}
+          className={currentSection === 'palate' ? 'tab-button tab-button-active' : 'tab-button tab-button-inactive'}
+        >
           Palate
-        </span>
-        <span className={currentSection === 'finish' ? 'font-bold text-unspoken-navy' : 'text-gray-400'}>
+        </button>
+        <button
+          onClick={() => setCurrentSection('finish')}
+          className={currentSection === 'finish' ? 'tab-button tab-button-active' : 'tab-button tab-button-inactive'}
+        >
           Finish
-        </span>
+        </button>
       </div>
 
-      {/* Section Title */}
+      {/* Section Instructions */}
       <div className="text-center mb-6">
-        <h2 className="text-2xl font-semibold text-unspoken-navy mb-2">
-          {currentSection.charAt(0).toUpperCase() + currentSection.slice(1)}
-        </h2>
-        <p className="text-gray-600">
-          Select all descriptors you detect ({sectionData.correct_count} correct options)
+        <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>
+          Select all flavor notes you detect ({sectionData.correct_count} correct)
         </p>
       </div>
 
       {/* Descriptor Options Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mb-8">
+      <div className="grid grid-cols-3 gap-3 mb-8">
         {sectionData.options.map((option) => (
           <button
             key={option.id}
@@ -145,9 +151,9 @@ function QuizPage() {
         <button
           onClick={handleSubmitSection}
           disabled={selections[currentSection].length === 0}
-          className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-primary w-full max-w-xs"
         >
-          {currentSection === 'finish' ? 'See Results' : 'Continue'}
+          {currentSection === 'finish' ? 'See Results' : `Continue to ${currentSection === 'nose' ? 'Palate' : 'Finish'}`}
         </button>
       </div>
     </div>

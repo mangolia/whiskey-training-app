@@ -7,17 +7,17 @@ function Header() {
 
   return (
     <>
-      <header className="bg-unspoken-navy text-white shadow-lg">
+      <header className="bg-secondary text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <Link to="/" className="text-2xl font-bold hover:text-unspoken-gold transition-colors">
-              Whiskey Sensory Training
+            <Link to="/" className="text-2xl font-bold hover:text-accent transition-colors">
+              Whiskey Tasting Quiz
             </Link>
 
             {/* Hamburger Menu Button */}
             <button
               onClick={() => setMenuOpen(true)}
-              className="hover:text-unspoken-gold transition-colors focus:outline-none"
+              className="hover:text-accent transition-colors focus:outline-none"
               aria-label="Open menu"
             >
               <svg

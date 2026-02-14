@@ -92,7 +92,7 @@ function ResultsPage() {
         <h1
           className="mb-2"
           style={{
-            color: 'var(--accent)',
+            color: '#ffffff',
             fontFamily: 'var(--font-heading)',
             fontSize: '32px',
             fontWeight: 600,
@@ -355,7 +355,7 @@ function ResultsPage() {
           className="w-full rounded-lg transition-all duration-300"
           style={{
             background: 'linear-gradient(135deg, #2a3c93 0%, #1e2d6e 100%)',
-            color: 'var(--accent)',
+            color: '#ffffff',
             padding: '16px 24px',
             fontSize: '16px',
             fontWeight: 600,

@@ -217,62 +217,80 @@ function ResultsPage() {
                   </div>
 
                   {/* Descriptors Grid - 3x3 showing all 9 */}
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid grid-cols-3 gap-2" style={{ gridAutoRows: '64px' }}>
                     {result.descriptors.map((descriptor, idx) => {
                       const isCorrectAndSelected = descriptor.isCorrect && descriptor.wasSelected;
                       const isCorrectButNotSelected = descriptor.isCorrect && !descriptor.wasSelected;
                       const isIncorrectButSelected = !descriptor.isCorrect && descriptor.wasSelected;
                       const isNeitherCorrectNorSelected = !descriptor.isCorrect && !descriptor.wasSelected;
 
-                      let bgColor = 'var(--background-alt)';
-                      let textColor = 'var(--text-secondary)';
-                      let borderColor = 'var(--neutral-light)';
+                      let bgColor = '#f5efe6';
+                      let textColor = '#9ca3af';
+                      let borderColor = '#d9d1c5';
                       let icon = '';
+                      let opacity = 1;
 
                       if (isCorrectAndSelected) {
-                        // User got it right - Navy with gold check
-                        bgColor = 'var(--primary)';
-                        textColor = 'var(--accent)';
-                        borderColor = 'var(--accent)';
+                        // User got it right - Navy background with white text and gold border
+                        bgColor = '#2a3c93';
+                        textColor = '#ffffff';
+                        borderColor = '#d4af37';
                         icon = '✓';
                       } else if (isCorrectButNotSelected) {
-                        // Correct answer but user missed it - Cream with gold outline
-                        bgColor = 'var(--card)';
-                        textColor = 'var(--accent)';
-                        borderColor = 'var(--accent)';
-                        icon = '○';
+                        // Correct answer but user missed it - Cream with gold text, NO ICON
+                        bgColor = '#fffef9';
+                        textColor = '#d4af37';
+                        borderColor = '#d4af37';
+                        icon = '';  // NO ICON for missed
                       } else if (isIncorrectButSelected) {
-                        // User selected wrong answer - Red indicator
-                        bgColor = 'var(--card)';
-                        textColor = 'var(--error)';
-                        borderColor = 'var(--error)';
+                        // User selected wrong answer - Cream background with red text and border
+                        bgColor = '#fffef9';
+                        textColor = '#8b3a3a';
+                        borderColor = '#8b3a3a';
                         icon = '✗';
+                      } else if (isNeitherCorrectNorSelected) {
+                        // Not relevant - faded
+                        opacity = 0.35;
                       }
 
                       return (
                         <div
                           key={idx}
-                          className="px-3 py-2.5 rounded-lg text-sm font-medium text-center transition-all"
+                          className="rounded-lg transition-all"
                           style={{
                             backgroundColor: bgColor,
                             color: textColor,
                             border: `2px solid ${borderColor}`,
-                            opacity: isNeitherCorrectNorSelected ? 0.35 : 1,
+                            opacity: opacity,
+                            height: '64px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            padding: '10px 8px',
+                            fontSize: '11px',
+                            fontWeight: 600,
+                            lineHeight: '1.3',
+                            textAlign: 'center',
+                            wordBreak: 'break-word',
+                            overflowWrap: 'break-word',
+                            hyphens: 'auto',
                             fontFamily: isCorrectAndSelected ? 'var(--font-heading)' : 'var(--font-body)',
-                            boxShadow: isCorrectAndSelected
-                              ? '0 2px 8px rgba(212, 175, 55, 0.3)'
-                              : 'none',
                           }}
                         >
-                          {icon && (
-                            <span
-                              className="mr-1 font-bold"
-                              style={{ fontSize: '14px' }}
-                            >
-                              {icon}
-                            </span>
-                          )}
-                          {descriptor.label}
+                          <div style={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            gap: '4px',
+                            width: '100%'
+                          }}>
+                            {icon && (
+                              <span style={{ fontSize: '12px', fontWeight: 'bold', flexShrink: 0 }}>
+                                {icon}
+                              </span>
+                            )}
+                            <span>{descriptor.label}</span>
+                          </div>
                         </div>
                       );
                     })}
@@ -280,22 +298,22 @@ function ResultsPage() {
 
                   {/* Legend */}
                   <div
-                    className="flex gap-4 justify-center mt-4 pt-3 text-xs"
+                    className="flex gap-6 justify-center mt-4 pt-3 text-xs"
                     style={{
                       borderTop: '1px solid var(--neutral-light)',
                       color: 'var(--text-secondary)',
                     }}
                   >
                     <div className="flex items-center gap-1.5">
-                      <span style={{ color: 'var(--accent)', fontWeight: 'bold' }}>✓</span>
+                      <span style={{ color: '#ffffff', backgroundColor: '#2a3c93', padding: '2px 6px', borderRadius: '4px', fontWeight: 'bold' }}>✓</span>
                       <span>Correct</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <span style={{ color: 'var(--error)', fontWeight: 'bold' }}>✗</span>
+                      <span style={{ color: '#8b3a3a', fontWeight: 'bold' }}>✗</span>
                       <span>Incorrect</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <span style={{ color: 'var(--accent)', fontWeight: 'bold' }}>○</span>
+                      <span style={{ color: '#d4af37', fontWeight: 'bold' }}>—</span>
                       <span>Missed</span>
                     </div>
                   </div>

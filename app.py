@@ -23,14 +23,42 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Configure CORS with specific origins
-ALLOWED_ORIGINS = [
-    os.getenv('FRONTEND_URL', 'https://whiskey-training-app.vercel.app'),
-    'http://localhost:5173',  # Development frontend
-    'http://localhost:5001',  # Local testing
-]
+# Determine environment
+DEBUG = os.getenv('FLASK_ENV') == 'development'
+IS_PRODUCTION = not DEBUG
+
+# Configure CORS with environment-specific origins
+if DEBUG:
+    ALLOWED_ORIGINS = [
+        'http://localhost:5173',  # Development frontend
+        'http://localhost:5001',  # Local testing
+        'http://localhost:3000',  # Alternative dev port
+    ]
+else:
+    ALLOWED_ORIGINS = [
+        os.getenv('FRONTEND_URL', 'https://whiskey-training-app.vercel.app'),
+    ]
+
 CORS(app, origins=ALLOWED_ORIGINS)
+logger.info(f"Environment: {'Development' if DEBUG else 'Production'}")
 logger.info(f"CORS enabled for origins: {ALLOWED_ORIGINS}")
+
+# ============================================================================
+# Security Headers Middleware
+# ============================================================================
+
+@app.after_request
+def set_security_headers(response):
+    """Add security headers to all responses"""
+    response.headers['X-Content-Type-Options'] = 'nosniff'
+    response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+    response.headers['X-XSS-Protection'] = '1; mode=block'
+
+    # Only enforce HSTS in production
+    if IS_PRODUCTION:
+        response.headers['Strict-Transport-Security'] = 'max-age=31536000; includeSubDomains'
+
+    return response
 
 # Database path
 DB_PATH = Path(__file__).parent / "databases" / "whiskey_production.db"
@@ -446,7 +474,14 @@ if __name__ == '__main__':
     logger.info("  GET  /api/whiskeys/search?q=<query>")
     logger.info("  GET  /api/distilleries")
     logger.info("  GET  /api/quiz/<whiskey_id>")
-    logger.info("Server starting on http://localhost:5001")
     logger.info("=" * 80)
 
-    app.run(debug=True, port=5001, host='0.0.0.0')
+    # Security: Use environment-based configuration
+    port = int(os.getenv('PORT', 5001))
+    host = '127.0.0.1' if DEBUG else '0.0.0.0'
+
+    logger.info(f"Server starting in {'DEBUG' if DEBUG else 'PRODUCTION'} mode")
+    logger.info(f"Listening on {host}:{port}")
+    logger.info("=" * 80)
+
+    app.run(debug=DEBUG, port=port, host=host)

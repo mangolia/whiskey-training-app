@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { api } from '../api/client';
 
@@ -10,34 +10,56 @@ function HomePage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Handle pre-filled search from distilleries page
-  useEffect(() => {
-    if (location.state?.searchQuery) {
-      const query = location.state.searchQuery;
-      setSearchQuery(query);
-      // Trigger search automatically
-      performSearch(query);
-      // Clear the state so it doesn't trigger again on back navigation
-      navigate('/', { replace: true });
-    }
-  }, [location.state, navigate]);
+  // Track the current AbortController
+  const abortControllerRef = useRef(null);
 
-  const performSearch = async (query) => {
+  // Memoized search function with race condition prevention
+  const performSearch = useCallback(async (query) => {
     if (!query.trim()) return;
+
+    // Cancel any pending request
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+    }
+
+    // Create new AbortController for this request
+    abortControllerRef.current = new AbortController();
 
     setLoading(true);
     setError(null);
 
     try {
-      const response = await api.searchWhiskeys(query);
+      const response = await api.searchWhiskeys(query, abortControllerRef.current.signal);
       setResults(response.results);
     } catch (err) {
-      setError('Failed to search whiskeys. Please try again.');
-      console.error('Search error:', err);
+      // Don't set error if request was aborted (expected behavior)
+      if (err.name !== 'AbortError') {
+        setError('Failed to search whiskeys. Please try again.');
+        if (import.meta.env.DEV) {
+          console.error('Search error:', err);
+        }
+      }
     } finally {
       setLoading(false);
     }
-  };
+  }, []);
+
+  // Handle pre-filled search from distilleries page
+  useEffect(() => {
+    if (location.state?.searchQuery) {
+      const query = location.state.searchQuery;
+      setSearchQuery(query);
+      performSearch(query);
+      navigate('/', { replace: true });
+    }
+
+    // Cleanup: abort any pending requests when component unmounts
+    return () => {
+      if (abortControllerRef.current) {
+        abortControllerRef.current.abort();
+      }
+    };
+  }, [location.state, navigate, performSearch]);
 
   const handleSearch = async (e) => {
     e.preventDefault();

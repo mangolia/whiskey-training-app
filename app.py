@@ -199,14 +199,19 @@ def search_whiskeys():
         with get_db_connection() as conn:
             cursor = conn.cursor()
 
-            # Search whiskeys by name (case-insensitive LIKE)
+            # Search whiskeys by name or canonical distillery name
             cursor.execute("""
-                SELECT whiskey_id, name, distillery
-                FROM whiskeys
-                WHERE name LIKE ?
-                ORDER BY name
+                SELECT
+                    w.whiskey_id,
+                    w.name,
+                    COALESCE(dm.canonical_name, w.distillery) as distillery
+                FROM whiskeys w
+                LEFT JOIN distillery_mappings dm ON w.distillery = dm.variant_name
+                WHERE w.name LIKE ?
+                   OR COALESCE(dm.canonical_name, w.distillery) LIKE ?
+                ORDER BY w.name
                 LIMIT ?
-            """, (f"%{sanitized_query}%", limit))
+            """, (f"%{sanitized_query}%", f"%{sanitized_query}%", limit))
 
             results = []
             for row in cursor.fetchall():
@@ -253,16 +258,19 @@ def get_distilleries():
         with get_db_connection() as conn:
             cursor = conn.cursor()
 
-            # Get distilleries with counts, ordered alphabetically
+            # Get distilleries with canonical names from mappings
+            # Use COALESCE to prefer canonical name, fallback to original
             cursor.execute("""
                 SELECT
-                    distillery as name,
-                    COUNT(*) as whiskey_count
-                FROM whiskeys
-                WHERE distillery IS NOT NULL
-                  AND distillery != ''
-                GROUP BY distillery
-                ORDER BY distillery COLLATE NOCASE
+                    COALESCE(dm.canonical_name, w.distillery) as name,
+                    COUNT(DISTINCT w.whiskey_id) as whiskey_count
+                FROM whiskeys w
+                LEFT JOIN distillery_mappings dm ON w.distillery = dm.variant_name
+                WHERE w.distillery IS NOT NULL
+                  AND w.distillery != ''
+                GROUP BY COALESCE(dm.canonical_name, w.distillery)
+                HAVING COUNT(DISTINCT w.whiskey_id) > 0
+                ORDER BY name COLLATE NOCASE
             """)
 
             distilleries = [dict_from_row(row) for row in cursor.fetchall()]

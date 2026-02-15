@@ -237,10 +237,10 @@ function ResultsPage() {
                         borderColor = '#d4af37';
                         icon = '✓';
                       } else if (isCorrectButNotSelected) {
-                        // Correct answer but user missed it - Cream with darker grey, NO ICON
-                        bgColor = '#fffef9';
-                        textColor = '#6b7280';
-                        borderColor = '#9ca3af';
+                        // Correct answer but user missed it - Light grey bg, dark grey text, NO BORDER
+                        bgColor = '#e5e7eb';
+                        textColor = '#4b5563';
+                        borderColor = 'transparent';
                         icon = '';  // NO ICON for missed
                       } else if (isIncorrectButSelected) {
                         // User selected wrong answer - Cream background with red text and border
@@ -313,7 +313,7 @@ function ResultsPage() {
                       <span>Incorrect</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <span style={{ color: '#6b7280', fontWeight: 'bold' }}>—</span>
+                      <span style={{ color: '#4b5563', fontWeight: 'bold' }}>—</span>
                       <span>Missed</span>
                     </div>
                   </div>

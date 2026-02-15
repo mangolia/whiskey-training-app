@@ -93,7 +93,7 @@ function HomePage() {
         <h3 className="mb-4">Featured Whiskey</h3>
         <div
           className="card cursor-pointer"
-          onClick={() => navigate('/quiz/67/eagle-rare-10-year')}
+          onClick={() => navigate('/quiz/1/eagle-rare-10-year')}
         >
           <div className="flex items-start justify-between mb-3">
             <div>

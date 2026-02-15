@@ -237,10 +237,10 @@ function ResultsPage() {
                         borderColor = '#d4af37';
                         icon = '✓';
                       } else if (isCorrectButNotSelected) {
-                        // Correct answer but user missed it - Cream with gold text, NO ICON
+                        // Correct answer but user missed it - Cream with darker grey, NO ICON
                         bgColor = '#fffef9';
-                        textColor = '#d4af37';
-                        borderColor = '#d4af37';
+                        textColor = '#6b7280';
+                        borderColor = '#9ca3af';
                         icon = '';  // NO ICON for missed
                       } else if (isIncorrectButSelected) {
                         // User selected wrong answer - Cream background with red text and border
@@ -267,7 +267,7 @@ function ResultsPage() {
                             alignItems: 'center',
                             justifyContent: 'center',
                             padding: '10px 8px',
-                            fontSize: '11px',
+                            fontSize: '13px',
                             fontWeight: 600,
                             lineHeight: '1.3',
                             textAlign: 'center',
@@ -275,22 +275,22 @@ function ResultsPage() {
                             overflowWrap: 'break-word',
                             hyphens: 'auto',
                             fontFamily: isCorrectAndSelected ? 'var(--font-heading)' : 'var(--font-body)',
+                            position: 'relative',
                           }}
                         >
-                          <div style={{
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '4px',
-                            width: '100%'
-                          }}>
-                            {icon && (
-                              <span style={{ fontSize: '12px', fontWeight: 'bold', flexShrink: 0 }}>
-                                {icon}
-                              </span>
-                            )}
-                            <span>{descriptor.label}</span>
-                          </div>
+                          {icon && (
+                            <span style={{
+                              position: 'absolute',
+                              top: '4px',
+                              left: '6px',
+                              fontSize: '12px',
+                              fontWeight: 'bold',
+                              lineHeight: 1
+                            }}>
+                              {icon}
+                            </span>
+                          )}
+                          <span>{descriptor.label}</span>
                         </div>
                       );
                     })}
@@ -313,7 +313,7 @@ function ResultsPage() {
                       <span>Incorrect</span>
                     </div>
                     <div className="flex items-center gap-1.5">
-                      <span style={{ color: '#d4af37', fontWeight: 'bold' }}>—</span>
+                      <span style={{ color: '#6b7280', fontWeight: 'bold' }}>—</span>
                       <span>Missed</span>
                     </div>
                   </div>

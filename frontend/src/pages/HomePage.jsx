@@ -12,6 +12,8 @@ function HomePage() {
 
   // Track the current AbortController
   const abortControllerRef = useRef(null);
+  // Track last processed navigation query to prevent duplicate searches
+  const lastNavigationQueryRef = useRef(null);
 
   // Memoized search function with race condition prevention
   const performSearch = useCallback(async (query) => {
@@ -46,20 +48,27 @@ function HomePage() {
 
   // Handle pre-filled search from distilleries page
   useEffect(() => {
-    if (location.state?.searchQuery) {
-      const query = location.state.searchQuery;
-      setSearchQuery(query);
-      performSearch(query);
-      navigate('/', { replace: true });
-    }
+    const incomingQuery = location.state?.searchQuery;
 
-    // Cleanup: abort any pending requests when component unmounts
+    // Only process if we have a query and haven't processed it yet
+    if (incomingQuery && incomingQuery !== lastNavigationQueryRef.current) {
+      lastNavigationQueryRef.current = incomingQuery;
+      setSearchQuery(incomingQuery);
+      performSearch(incomingQuery);
+
+      // Clear the navigation state to prevent issues with browser back button
+      navigate('/', { replace: true, state: {} });
+    }
+  }, [location.state?.searchQuery, navigate, performSearch]);
+
+  // Cleanup: abort any pending requests when component unmounts
+  useEffect(() => {
     return () => {
       if (abortControllerRef.current) {
         abortControllerRef.current.abort();
       }
     };
-  }, [location.state, navigate, performSearch]);
+  }, []);
 
   const handleSearch = async (e) => {
     e.preventDefault();
